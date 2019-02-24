@@ -16,7 +16,6 @@ RUN apk update \
     && apk upgrade \
     && apk add --no-cache openssl \
     && apk add --no-cache bash \
-    && apk add vim
     && adduser -D -H -u 1000 -s /bin/bash www-data
 
 ARG PHP_UPSTREAM_CONTAINER=php-fpm
